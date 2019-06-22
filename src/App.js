@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   return (
     <div>
+      {/* ================ baris 1 ================= */}
       <div className="App">
         
         {/* Scatter & Bar */}
@@ -70,6 +71,7 @@ function App() {
 
       </div>
       
+      {/* ================ baris 2 ================= */}
       <div className="App">
         
         {/* Contour */}
@@ -136,6 +138,66 @@ function App() {
             }
           ]}
           layout={{width: 400, height: 400, title: 'Historam 2D'}}
+        />;
+
+      </div>
+      
+      {/* ================ baris 3 ================= */}
+      <div className="App">
+        
+        {/* OHLC */}
+        <Plot
+          data={[
+            {
+              x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+              open: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+              high: [8, 8, 7, 8, 5, 8, 7, 8, 9, 7],
+              low: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              close: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+              type: 'ohlc',
+            }
+          ]}
+          layout={{width: 400, height: 400, title: 'OHLC'}}
+        />;
+
+        {/* Candlestick */}
+        <Plot
+          data={[
+            {
+              x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+              open: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+              high: [8, 8, 7, 8, 5, 8, 7, 8, 9, 7],
+              low: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              close: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+              type: 'candlestick',
+            }
+          ]}
+          layout={{width: 400, height: 400, title: 'Candlestick'}}
+        />;
+
+        {/* Waterfall */}
+        <Plot
+          data={[
+            {
+              x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+              y: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+              type: 'waterfall'
+            }
+          ]}
+          layout={{width: 400, height: 400, title: 'Waterfall'}}
+        />;
+
+        {/* Scatter 3D */}
+        <Plot
+          data={[
+            {
+              x: [1, 2, 3],
+              y: [1, 2, 3],
+              z: [1, 2, 3],
+              type: 'scatter3d',
+            }
+          ]}
+          layout={{width: 400, height: 400, title: 'Scatter 3D'}}
         />;
 
       </div>
