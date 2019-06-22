@@ -8,6 +8,8 @@ function App() {
       {/* ================ baris 1 ================= */}
       <div className="App">
         
+        <h1>React & Plotly.js</h1>
+
         {/* Scatter & Bar */}
         <Plot
           data={[

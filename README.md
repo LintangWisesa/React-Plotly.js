@@ -6,11 +6,22 @@
 
 ```bash
 $ npm i react-plotly.js plotly.js
+
+$ git clone https://github.com/LintangWisesa/React-Plotly.js.git
+
+$ cd React-Plotly.js
+
+$ npm start
 ```
+#
+
+## _Screenshot:_
+
+![lintang](./screenshot.png)
 
 #
 
-## _Source:_
+## _References:_
 - [Plotly.js](https://plot.ly/javascript/)
 - [React Plotly.js](https://plot.ly/javascript/react/)
 - [Plotly.js Reference](https://plot.ly/javascript/reference/)
